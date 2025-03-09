@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DNHS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hIo3h3KsK8lF3qVgSUTvQpiSiVlb6nsw8AYatR2XTTk70XRi97evMNDS&s=10);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color:#009EFF;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-container {
+  background-color: #FFE50A;
+  position: relative;
+  padding: 10px;
+}
+
+
+.menu-links {
+  display: none;
+  background-color: #FFE50A;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  color:white;
+}
+
+.menu-links a {
+  display: block;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-links a:hover {
+  background-color: #FFE50A;
+}
+
+.menu-button {
+  background-color: #FFE50A;
+  color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.menu-button:hover {
+  background-color: #FFE50A;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 10px;
+}
+
+.column.left {
+  width: 20%;
+  border:solid black;
+  color:white;
+}
+
+.column.right {
+  width: 80%;
+  border:solid black;
+  color:white;
+  text-shadow: 0px, 1px black
+}
+
+img{
+  width: 400px;
+  height:250px;
+  
+}
+.footer{
+  background-color:#FFDE00;
+  text-align: center;
+  border: solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+  .menu-links {
+    position: static;
+  }
+}
+</style>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu-links");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="header">
+  <h1>DELA PAZ NATIONAL HIGH SCHOOL</h1>
+</div>
+
+<!-- Menu Button -->
+<div class="menu-container">
+  <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+  <div class="menu-links" id="menu-links">
+    <a href="#missionandvision">DepEd Mission and Vision</a>
+    <a href="#background">BACKGROUND</a>
+    <a href="#rooms">ROOMS</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column left">
+   <section id="missionandvision">
+    <h2>DepEd Misson and Vision</h2>
+     <h3>VISION</h3>
+     <p>We dream of Filipinos who passionately love their country and whose values and competencies enable them to realize their full potential and contribute meaningfully to building the nation.As a learner-centered public institution, the Department of Education continuously improves itself to better serve its stakeholders.</p>
+     <h3>MISSION</h3>
+     <p>To protect and promote the right of every Filipino to quality, equitable, culture-based, and complete basic education where: students learn in a child-friendly, gender-sensitive, safe, and motivating environment. Teachers facilitate learning and constantly nurture every learner. Administrators and staff ensure an enabling and supportive environment for effective learning to happen. Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners."</p>
+   </section>
+  </div>
+  </section>
+  
+  <div class="column right">
+    <section id="background">
+    <h2>SCHOOL BACKGROUND</h2>
+    <p><strong>The DELA PAZ NATIONAL HIGH SCHOOL is a public school which is located at Almeda Subdivision Brgy. Dela Paz, Binan City Laguna. This is a secondary school that will caters almost one thousand three hundred Eighty -eight total students for this SY 2024-2025.The main objectives of the school is to achieved total students development in all aspects and to prepare students life by offering technologically updated subjects. In line with this, the school has a total of forty - six teachers, two non teaching staff and headed by a Teacher -In Charge that consistently dedicated their lives to the profession. These school personnel are well - equipped with appropriate knowledge, skills and enthusiasm that is necessary to the needs of the learners especially during this pandemic situation.</strong></p>
+    </section>
+    <section id="rooms">
+      <h1>Rooms</h1>
+      <h2>Principal's Office</h2>
+      <a href="office.jpg"><img src="office.jpg" alt="office"></a>
+      <h2>Canteen</h2>
+      <a href="canteen.jpg"><img src="canteen.jpg" alt="canteen"></a>
+      <h2>Teacher's Lounge</h2>
+      <a href="lounge.jpg"><<img src="lounge.jpg" alt="lounge"></a>
+      <h2>Science Laboratory </h2>
+      <a href="science.jpg"><img src="science.jpg" alt="science"></a>
+      <h2>T.L.E Laboratory </h2>
+      <a href="tle.jpg"><img src="tle.jpg" alt="tle"></a>
+      <h2>Library</h2>
+      <a href="library.jpg"><img src="library.jpg" alt="library.jpg"></a>
+    </section>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="https://maps.app.goo.gl/fz2QfZgqNq8nwuD46"><h1><strong>DELA PAZ NATIONAL HIGH SCHOOL </strong></h1></a>
+</div>
+
+</body>
+</html>
